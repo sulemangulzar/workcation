@@ -8,80 +8,173 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 dark:bg-slate-800">
     <div class="px-8 py-12">
-        <img class="h-12" src="/images/logo.png" alt="Workcation">
-        <img class="mt-6 rounded-lg shadow-xl" src="images/beach-work.jpg" alt="Workcationing">
-        <h1 class="mt-6 text-2xl font-bold text-gray-900">You can work from anywhere. Take
-            advantage of
-            it.</h1>
-        <p class="mt-2 text-gray-600">
+        <div class="lg:grid grid-cols-2">
+            <div>
+                <img class="h-12 md:h-20" src="/images/logo.png" alt="Workcation">
+                <img class="mt-6 rounded-lg shadow-xl lg:hidden" src="images/beach-work.jpg" alt="Workcationing">
+                <h1
+                    class="mt-6 text-2xl md:text-4xl lg:text-3xl md:tracking-wide md:leading-tight font-bold text-gray-900 xl:text-4xl 2xl:text-5xl 2xl:my-16">
+                    You can
+                    work
+                    from anywhere.
+                    <br>Take
+                    advantage of
+                    it.
+                </h1>
+            </div>
+            <img class="rounded-lg shadow-xl hidden lg:block" src="images/beach-work.jpg" alt="Workcationing">
+        </div>
+        <p class="mt-4 text-gray-600 md:text-xl lg:py-4 xl:text-2xl 2xl:text-3xl">
             Workcation helps you find work-friendly rentals in beautiful locations so you can enjoy some nice weather
-            even when you are not on vications
+            even when you are not on vacations.
         </p>
         <div class="mt-4"><a
-                class="px-5 py-3 rounded-lg shadow-lg bg-black inline-block text-white uppercase tracking-wider font-semibold text-sm"
+                class="px-5 py-3 rounded-lg shadow-lg bg-gradient-to-r from-cyan-300 to-blue-500 hover:bg-gradient-to-l from-cyan-300 to-blue-500 inline-block text-white uppercase tracking-wider font-semibold text-sm lg:px-12 lg:text:xl"
                 href="#">Book
                 your
                 escapes</a>
         </div>
-        <p class="mt-8 text-md text-gray-600">
+        <p class="mt-8 text-md text-gray-600 md:text-2xl xl:text-3xl">
             Popular Destinations :
         </p>
-        <p class="mt-2 text-sm text-gray-600">A selection of great work-friendly cities with lots to see and explore.
+        <p class="mt-2 text-sm text-gray-600 md:text-xl xl:text-2xl">A selection of great work-friendly cities with lots
+            to see and
+            explore.
         </p>
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
+        <div class="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-2 2xl:grid-cols-4 2xl:gap-2">
+            <div
+                class=" mt-6 h-32 w-full xl:h-96 xl:w-96 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center ">
 
-            <img class="h-32 w-32" src="images/toronto.jpeg" alt="toronto">
+                <img class=" h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/toronto.jpeg" alt="toronto">
 
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">Toronto</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">75$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 78 properties ></p>
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Toronto
+                    </p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">75$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 78 properties >
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
-            <img class="h-32 w-32" src="images/chicago.jpeg" alt="chicago">
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">Chicago</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">100$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 82 properties ></p>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/chicago.jpeg" alt="chicago">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Chicago
+                    </p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">100$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 82 properties >
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
-            <img class="h-32 w-32" src="images/malibu.jpeg" alt="malibu">
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">Malibu</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">110$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 90 properties ></p>
+            <div
+                class=" mt-6 h-32 xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/malibu.jpeg" alt="malibu">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:text-xl xl:text-2xl">Malibu</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600">110$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 90 properties ></p>
+                </div>
             </div>
-        </div>
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
-            <img class="h-32 w-32" src="images/new-york.jpeg" alt="new-york">
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">New York</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">150$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 115 properties ></p>
+            <div
+                class=" mt-6 h-32 xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/new-york.jpeg" alt="new-york">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">New York
+                    </p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">150$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 115 properties >
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
-            <img class="h-32 w-32" src="images/seattle.jpeg" alt="seattle">
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">Seattle</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">125$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 115 properties ></p>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96  2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/seattle.jpeg" alt="seattle">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl" lg:px-8>
+                        Seattle</p>
+                    <p class="text-sm   font-sans px-4 pt-1 text-gray-600 lg:px-8">125$ / Night Average</p>
+                    <p class="text-sm  font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 115 properties >
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class=" mt-6 h-32 w-full shadow-md rounded-lg bg-white overflow-hidden flex">
-            <img class="h-32 w-32" src="images/colorado.jpeg" alt="colorado">
-            <div>
-                <p class="font-semibold tracking-wide font-sans px-4 pt-4">Colorado</p>
-                <p class="text-sm font-sans px-4 pt-1 text-gray-600">1150$ / Night Average</p>
-                <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600">Explore 115 properties ></p>
+            <div
+                class=" mt-6 h-32 xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/colorado.jpeg" alt="colorado">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Colorado
+                    </p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">150$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 115 properties >
+                    </p>
+                </div>
             </div>
+            <div
+                class=" mt-6 h-32 xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 xl:w-96 xl:h-64 lg:w-40" src="images/paris.jpg" alt="paris">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Paris</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">130$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 62 properties >
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" mt-6 h-32 xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 lg:w-40 xl:w-96 xl:h-64 " src="images/tokyo.webp" alt="tokyo">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Tokyo</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">160$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 105 properties >
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 lg:w-40 xl:w-96 xl:h-64 " src="images/barcelona.jpg" alt="barcelona">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Barcelona
+                    </p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">170$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 100 properties >
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 lg:w-40 xl:w-96 xl:h-64 " src="images/rome-italy.webp" alt="rome-italy">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Rome</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">120$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 135 properties >
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96 w-full 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 lg:w-40 xl:w-96 xl:h-64 " src="images/london.jpg" alt="london">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">London</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">200$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 170 properties >
+                    </p>
+                </div>
+            </div>
+            <div
+                class=" mt-6 h-32 w-full xl:w-96 xl:h-96 2xl:w-80 2xl:h-96 shadow-md rounded-lg bg-white overflow-hidden flex xl:block xl:text-center">
+                <img class="h-32 w-32 lg:w-40 xl:w-96 xl:h-64 " src="images/venice.jpeg" alt="venice">
+                <div>
+                    <p class="font-semibold tracking-wide font-sans px-4 pt-4 lg:px-8 lg:text-xl xl:text-2xl">Venice</p>
+                    <p class="text-sm font-sans px-4 pt-1 text-gray-600 lg:px-8">140$ / Night Average</p>
+                    <p class="text-sm font-sans font-semibold px-4 pt-8 text-sky-600 lg:px-8">Explore 75 properties >
+                    </p>
+                </div>
+            </div>
+
         </div>
-        <p class="text-sky-600 text-sm mt-6 text-center">Show more results ></p>
+        <p class="text-sky-600 text-sm mt-6 md:mt-8 text-center lg:text-lg">Show more results ></p>
     </div>
     </div>
 
